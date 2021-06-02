@@ -2170,19 +2170,6 @@
                     ]
                 }
             },
-            "OverconstrainedError": {
-                "name": "OverconstrainedError",
-                "extends": "Error",
-                "exposed": "Window",
-                "properties": {
-                    "property": {
-                        "constraint": {
-                            "name": "constraint",
-                            "type": "DOMString"
-                        }
-                    }
-                }
-            },
             "ProgressEvent": {
                 "type-parameters": [
                     {

@@ -11135,12 +11135,12 @@ declare var OscillatorNode: {
 };
 
 interface OverconstrainedError extends Error {
-    constraint: string;
+    readonly constraint: string;
 }
 
 declare var OverconstrainedError: {
     prototype: OverconstrainedError;
-    new(): OverconstrainedError;
+    new(constraint: string, message?: string): OverconstrainedError;
 };
 
 interface OverflowEvent extends UIEvent {
@@ -18946,7 +18946,7 @@ interface MutationCallback {
 }
 
 interface NavigatorUserMediaErrorCallback {
-    (error: MediaStreamError): void;
+    (error: DOMException): void;
 }
 
 interface NavigatorUserMediaSuccessCallback {
